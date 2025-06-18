@@ -10,7 +10,7 @@ export default defineConfig({
   ],
   define: {
     'process.env': {
-      URL: process.env.URL || 'https://vietick.onrender.com',
+      URL: process.env.URL || 'http://localhost:8080',
     },
   },
 })

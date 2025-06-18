@@ -1,13 +1,18 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
+interface user {
+  Username: string,
+}
+
 interface Question {
   id: string;
-  title: string;
-  content: string;
-  userId: string;
-  createdAt: string;
-  updatedAt: string;
+  Title: string;
+  Content: string;
+  UserID: string;
+  User: user;
+  CreatedAt: string;
+  UpdatedAt: string;
 }
 
 interface QuestionState {
